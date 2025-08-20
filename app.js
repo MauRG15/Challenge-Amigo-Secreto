@@ -14,14 +14,26 @@ function agregarAmigo() {
     if(nombreAmigo!=''){
         amigos.push(nombreAmigo);
         console.log(amigos);
+        agregarElementosLista();
     }
     else{
-        alert('Por favor, inserte un número valido');
+        alert('Por favor, inserte un nombre valido');
     }
     limpiarCajaTexto();
 }
 
+//Función para limpiar caja de Texto
 function limpiarCajaTexto(){
     document.getElementById("amigo").value='';
 }
 
+//Función para agregar elementos a la lista en el HTML
+function agregarElementosLista(){
+    let listahtml=document.getElementById('listaAmigos');
+    listahtml.innerHTML='';//Evita que se dupliquen los datos de la lista
+    for (let i=0; i<amigos.length ; i++){
+        let nuevoElementoLista=document.createElement('li');//Crear etiqueta en el DOM cada que se añade un elemento a la lista
+        nuevoElementoLista.textContent=amigos[i];//Agregar texto a la etiqueta
+        document.getElementById('listaAmigos').appendChild(nuevoElementoLista);//Indicar el lugar al que petenecerá dicha etiqueta
+    }
+}

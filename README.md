@@ -8,7 +8,7 @@
 ## Insignias
 
 ![Estado](https://img.shields.io/badge/Estado-Finalizado%20-green)
-![Lenguaje](https://img.shields.io/badge/JavaScript-100%25-blue)
+![Lenguaje](https://img.shields.io/badge/JavaScript-blue)
 
 ---
 

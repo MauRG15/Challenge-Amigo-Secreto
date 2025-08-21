@@ -12,13 +12,18 @@ function agregarAmigo() {
     //console.log(nombreAmigo);//Verificar que solo se agregue el valor del objeto
     
     //Validar una entrada valida
-    if(nombreAmigo!=''){
+    if(nombreAmigo!='' && !(amigos.includes(nombreAmigo))){//Evita entadas vacias y nombres repetidos
         amigos.push(nombreAmigo);
         console.log(amigos);
         agregarElementosLista();
     }
     else{
-        alert('Por favor, inserte un nombre valido');
+        if(amigos.includes(nombreAmigo)){
+            alert("Ese nombre ya está en la lista, por favor, ingresa otro nombre o agregalo con sus apellidos.")
+        }
+        else{
+            alert('Por favor, inserte un nombre valido');
+        }
     }
     limpiarCajaTexto();
 }

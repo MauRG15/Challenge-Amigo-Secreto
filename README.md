@@ -72,3 +72,8 @@ Es funcional pero pueden añadirse mejoras como:
 git clone https://github.com/usuario/amigo-secreto.git
 ```
 2. Abre index.html en tu navegador y listo, ¡Puedes jugar **"Amigo Secreto"**!.
+
+O simpemente entrar a la siguiente liga.
+
+```bash
+https://maurg15.github.io/Challenge-Amigo-Secreto/
